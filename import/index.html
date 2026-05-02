@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Import Cost in Local Currency</title>
+<meta name="google-site-verification" content="PkLa_ViOo6FAHpvh8SacceMb95o9tePRdrqLNBz9X1M" />
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<h1>Import Cost in Local Currency</h1>
+
+<input id="a" placeholder="Amount / Price">
+<input id="b" placeholder="Rate / Cost">
+
+<button onclick="calc()">Calculate</button>
+<p id="res"></p>
+
+<a href="../index.html">← Back</a>
+
+<script>
+function calc(){let usd=+a.value||0;let rate=+b.value||1;res.innerText='$'+(usd*rate).toFixed(2);} 
+</script>
+
+</body>
+</html>

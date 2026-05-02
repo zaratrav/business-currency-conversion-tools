@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Currency Risk Calculator</title>
+<meta name="google-site-verification" content="PkLa_ViOo6FAHpvh8SacceMb95o9tePRdrqLNBz9X1M" />
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<h1>Currency Risk Calculator</h1>
+
+<input id="a" placeholder="Amount / Price">
+<input id="b" placeholder="Rate / Cost">
+
+<button onclick="calc()">Calculate</button>
+<p id="res"></p>
+
+<a href="../index.html">← Back</a>
+
+<script>
+function calc(){let exposure=+a.value||0;let volatility=+b.value||0;res.innerText='$'+(exposure*(volatility/100)).toFixed(2);} 
+</script>
+
+</body>
+</html>
